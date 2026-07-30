@@ -1,7 +1,7 @@
 # Maintainer: ZilloweZ <zillowez@gmail.com>
 
 Name:           zoi
-Version:        1.23.4
+Version:        1.24.0
 Release:        1%{?dist}
 Summary:        Advanced Package Manager & Environment Orchestrator
 
