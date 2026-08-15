@@ -1,7 +1,7 @@
-# Maintainer: ZilloweZ <zillowez@gmail.com>
+# Maintainer: ZilloweZ <zillowez@proton.me>
 
 Name:           zoi
-Version:        1.24.4
+Version:        1.25.1
 Release:        1%{?dist}
 Summary:        Advanced Package Manager & Environment Orchestrator
 
@@ -29,9 +29,10 @@ Zoi is an advanced package manager and environment orchestrator, designed to sim
 %prep
 %setup -q -c -T
 tar -xf %{SOURCE0} --strip-components=1
+cargo fetch --locked
 
 %build
-cargo build --release --bin zoi
+cargo build --release --locked --bin zoi
 
 %install
 install -D -m 755 target/release/zoi %{buildroot}%{_bindir}/zoi
