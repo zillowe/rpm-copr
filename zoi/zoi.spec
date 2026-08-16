@@ -1,9 +1,11 @@
 # Maintainer: ZilloweZ <zillowez@proton.me>
 
 %global debug_package %{nil}
+%undefine _debugsource_packages
+%global _pkgverify_level none
 
 Name:           zoi
-Version:        1.25.3
+Version:        1.25.4
 Release:        1%{?dist}
 Summary:        Advanced Package Manager & Environment Orchestrator
 
